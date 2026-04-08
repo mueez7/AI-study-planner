@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import Planner from "./pages/Planner.tsx";
 import ProgressPage from "./pages/Progress.tsx";
 import Login from "./pages/Login.tsx";
+import Signup from "./pages/Signup.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -22,7 +23,7 @@ const App = () => (
           <Route path="/planner" element={<Planner />} />
           <Route path="/progress" element={<ProgressPage />} />
           <Route path="/login" element={<Login />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
